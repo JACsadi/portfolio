@@ -1,6 +1,11 @@
 /* Make header menu fit the width and space buttons evenly */
 
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -34,6 +39,7 @@ header button:hover {
 }
 
 body {
+  padding: 80px 0 0 0;
   margin: 0;
   font-family: "Segoe UI", Arial, sans-serif;
   background: #f6f6f6;
@@ -63,14 +69,30 @@ body {
   color: #555;
 }
 .about {
-  /* display: none; */
   display: flex;
+  background-image: url("WhatsApp Image 2025-07-20 at 05.16.46_a6f89880.jpg");
+  flex: 1 1 auto;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  text-align: center;
-  height: calc(100vh - 80px); /* Adjust for header height */
-  margin-top: 60px;
+  justify-content: center;
+  width: 100vm;
+  margin: 0 auto;
+  padding: 40px 32px;
+  /* ba ckground: linear-gradient(135deg, #f8ffae 0%, #43c6ac 100%); */
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(67, 198, 172, 0.12);
+}
+.about_description {
+  font-size: 1.35rem;
+  font-family: "Merriweather", "Georgia", serif;
+  color: #222;
+  margin-bottom: 28px;
+  line-height: 1.7;
+  text-align: left;
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 12px;
+  padding: 18px 24px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
 }
 
 /* Achievements list styling */
