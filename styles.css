@@ -41,7 +41,7 @@ body {
   /* flex-direction: column; */
 }
 
-.staring.page {
+.staring_page {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -51,16 +51,26 @@ body {
   margin-top: 60px;
 }
 
-.staring.page h1 {
+.staring_page h1 {
   font-size: 2.5rem;
   margin-bottom: 10px;
   color: #222;
 }
 
-.staring.page h2 {
+.staring_page h2 {
   font-size: 1.5rem;
   color: #555;
 }
 .about {
+  /* display: none; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: calc(100vh - 80px); /* Adjust for header height */
+  margin-top: 60px;
+}
+.hidden {
   display: none;
 }
