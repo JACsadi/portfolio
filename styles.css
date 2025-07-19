@@ -70,7 +70,7 @@ body {
 }
 .about {
   display: flex;
-  background-image: url("WhatsApp Image 2025-07-20 at 05.16.46_a6f89880.jpg");
+  background-image: url("https://raw.githubusercontent.com/JACsadi/portfolio/refs/heads/main/WhatsApp%20Image%202025-07-20%20at%2005.16.46_a6f89880.jpg");
   flex: 1 1 auto;
   flex-direction: column;
   align-items: center;
