@@ -5,58 +5,53 @@ const ach = document.querySelector(".achivements_list");
 const home = document.querySelector(".staring_page");
 const con_button = document.querySelector("#contact");
 const con = document.querySelector(".contact");
-const qu_button = document.querySelector("#quotes");
-const qu = document.querySelector(".quotes");
+const qu_button = document.querySelector("#projects");
+const qu = document.querySelector(".projects");
 const home_button = document.querySelector("#home");
-// const qu = document.querySelector(".quotes");
+// const qu = document.querySelector(".projects");
 
 home_button.addEventListener("click", () => {
   console.log("home button clicked");
- 
-    toggle_hidden();
-    toggle_active();
-    home_button.classList.add("active");
-    home.classList.remove("hidden");
-  
+
+  toggle_hidden();
+  toggle_active();
+  home_button.classList.add("active");
+  home.classList.remove("hidden");
 });
 
 qu_button.addEventListener("click", () => {
   console.log("qu button clicked");
 
-    toggle_hidden();
-    toggle_active();
-    qu_button.classList.add("active");
-    qu.classList.remove("hidden");
- 
+  toggle_hidden();
+  toggle_active();
+  qu_button.classList.add("active");
+  qu.classList.remove("hidden");
 });
 
 con_button.addEventListener("click", () => {
   console.log("con button clicked");
- 
-    toggle_hidden();
-    toggle_active();
-    con_button.classList.add("active");
-    con.classList.remove("hidden");
-  
+
+  toggle_hidden();
+  toggle_active();
+  con_button.classList.add("active");
+  con.classList.remove("hidden");
 });
 
 about_button.addEventListener("click", () => {
   console.log("About button clicked");
-  
-    toggle_hidden();
-    toggle_active();
-    about_button.classList.add("active");
-    about.classList.remove("hidden");
-  
+
+  toggle_hidden();
+  toggle_active();
+  about_button.classList.add("active");
+  about.classList.remove("hidden");
 });
 
 ach_button.addEventListener("click", () => {
   console.log("Achievements button clicked");
-    toggle_hidden();
-    toggle_active();
-    ach_button.classList.add("active");
-    ach.classList.remove("hidden");
- 
+  toggle_hidden();
+  toggle_active();
+  ach_button.classList.add("active");
+  ach.classList.remove("hidden");
 });
 
 document.querySelectorAll(".achivement").forEach((item) => {
@@ -83,5 +78,5 @@ function toggle_active() {
   ach_button.classList.remove("active");
   qu_button.classList.remove("active");
   con_button.classList.remove("active");
-  home_button.classList.remove("active")
+  home_button.classList.remove("active");
 }
