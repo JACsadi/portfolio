@@ -5,13 +5,13 @@ header {
   top: 0;
   left: 0;
   z-index: 100;
-
+  background-image: url("https://cdn11.bigcommerce.com/s-3s9byhc/images/stencil/1280x1280/products/219/3135/grateful-dyes-deep-purple-66__59254.1736977969.jpg?c=2");
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   width: 100vw;
   min-width: 0;
-  background: #222;
+  /* background: #222; */
   padding: 20px 0;
   box-sizing: border-box;
 }
@@ -19,7 +19,7 @@ header {
 header button {
   flex: 1 1 0;
   margin: 0 10px;
-  background: #b2caeb;
+  background: #b3b3f5;
   color: #130505;
   border: none;
   padding: 12px 0;
@@ -34,7 +34,7 @@ header button {
 }
 
 header button:hover {
-  background: #81b3fa;
+  background: #cca6f5;
   color: #000000;
 }
 
@@ -89,10 +89,12 @@ body {
   box-shadow: 0 4px 24px rgba(67, 198, 172, 0.12);
 }
 .about_description {
+  display: flex;
+  flex-direction: column;
   font-size: 1.35rem;
   font-family: "Merriweather", "Georgia", serif;
   color: #222;
-  margin-bottom: 28px;
+  margin-bottom: 0px;
   line-height: 1.7;
   text-align: left;
   background: rgba(255, 255, 255, 0.75);
@@ -100,8 +102,13 @@ body {
   padding: 18px 24px;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
 }
+.about_title {
+  font-size: 1.7rem;
+  color: #000000;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
 
-/* Achievements list styling */
 .achivements_list {
   display: flex;
   flex-direction: column;
@@ -243,6 +250,18 @@ body {
   display: none;
 }
 .active {
-  background: #bf0303;
+  background: #5357a7;
   color: #fff;
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #ffffff;
+  }
+
+  header {
+    background-color: #1e1e1e;
+  }
+
+  /* Customize buttons, cards, etc. */
 }
